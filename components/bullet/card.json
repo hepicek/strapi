@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_bullet_cards",
+  "info": {
+    "name": "card",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "bulletTitle": {
+      "type": "string"
+    },
+    "bulletText": {
+      "type": "richtext"
+    }
+  }
+}

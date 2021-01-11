@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "features",
+  "info": {
+    "name": "Feature",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "excerpt": {
+      "type": "text"
+    },
+    "featured": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "subExcerpt": {
+      "type": "text"
+    },
+    "card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bullet.card"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
